@@ -4,7 +4,7 @@
 
 ### 运行展示 / Demo Showcase
 
-<video src="https://github.com/bennix/ZenCLI/raw/main/assets/demo.mp4" controls="controls" width="100%" muted="muted"></video>
+![Demo Video](./assets/demo.mp4)
 
 <a id="chinese"></a>
 ## 🇨🇳 中文说明
