@@ -4,7 +4,7 @@
 
 ### 运行展示 / Demo Showcase
 
-![Demo Video](./assets/demo.mp4)
+![Demo Auto Play Animation](./assets/demo.gif)
 
 <a id="chinese"></a>
 ## 🇨🇳 中文说明
