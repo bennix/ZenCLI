@@ -1,0 +1,76 @@
+{
+  "name": "zen-cli",
+  "version": "0.5.0",
+  "author": "zhipingxu",
+  "description": "An agentic coding assistant desktop app powered by ZenMux / Ollama",
+  "type": "module",
+  "main": "dist/electron-main.js",
+  "scripts": {
+    "dev": "node node_modules/tsx/dist/cli.mjs src/index.ts",
+    "build": "node node_modules/typescript/bin/tsc",
+    "build:icon:mac": "node scripts/build-macos-icon.mjs",
+    "validate:web-ui": "node scripts/validate-web-page-script.mjs",
+    "start": "node dist/index.js",
+    "electron:dev": "node node_modules/typescript/bin/tsc && node node_modules/electron/cli.js dist/electron-main.js",
+    "electron:build": "node node_modules/typescript/bin/tsc && node node_modules/electron-builder/cli.js --win",
+    "electron:build:mac": "node node_modules/typescript/bin/tsc && node scripts/validate-web-page-script.mjs && node scripts/build-macos-app.mjs",
+    "electron:build:mac:dmg": "node node_modules/typescript/bin/tsc && node scripts/validate-web-page-script.mjs && node scripts/build-macos-app.mjs --dmg",
+    "postinstall": "node node_modules/electron/install.js && node node_modules/electron-builder/install-app-deps.js"
+  },
+  "build": {
+    "appId": "com.zencli.app",
+    "productName": "zen-cli",
+    "files": [
+      "dist/**/*",
+      "vendor/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "zen-cli"
+    },
+    "portable": {
+      "artifactName": "zen-cli-portable-${version}.exe"
+    }
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "chalk": "^5.4.1",
+    "fast-glob": "^3.3.3",
+    "katex": "^0.16.44",
+    "pdfjs-dist": "^5.6.205"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

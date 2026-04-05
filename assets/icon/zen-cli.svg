@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="128" x2="864" y2="896" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10172b"/>
+      <stop offset="0.55" stop-color="#1a2137"/>
+      <stop offset="1" stop-color="#273d67"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="34%" cy="26%" r="70%">
+      <stop offset="0" stop-color="#7aa2f7" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#7aa2f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="224" y1="214" x2="816" y2="804" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7aa2f7"/>
+      <stop offset="0.55" stop-color="#79c6ff"/>
+      <stop offset="1" stop-color="#73f0cf"/>
+    </linearGradient>
+    <linearGradient id="prompt" x1="340" y1="420" x2="704" y2="604" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6d28a"/>
+      <stop offset="1" stop-color="#e0af68"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="232" fill="url(#bg)"/>
+  <rect x="48" y="48" width="928" height="928" rx="208" fill="none" stroke="#d7e7ff" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="340" cy="250" r="370" fill="url(#glow)"/>
+
+  <circle cx="512" cy="512" r="308" fill="none" stroke="#0b1020" stroke-opacity="0.34" stroke-width="128"/>
+  <circle
+    cx="512"
+    cy="512"
+    r="308"
+    fill="none"
+    stroke="url(#ring)"
+    stroke-width="108"
+    stroke-linecap="round"
+    stroke-dasharray="1650 290"
+    transform="rotate(-38 512 512)"
+  />
+  <circle
+    cx="512"
+    cy="512"
+    r="308"
+    fill="none"
+    stroke="#a6ffe5"
+    stroke-opacity="0.92"
+    stroke-width="32"
+    stroke-linecap="round"
+    stroke-dasharray="118 1820"
+    transform="rotate(-36 512 512)"
+  />
+  <circle cx="770" cy="332" r="28" fill="#9ece6a"/>
+
+  <path
+    d="M 364 424 L 482 512 L 364 600"
+    fill="none"
+    stroke="#0b1020"
+    stroke-opacity="0.28"
+    stroke-width="92"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M 364 424 L 482 512 L 364 600"
+    fill="none"
+    stroke="url(#prompt)"
+    stroke-width="72"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M 552 596 H 694"
+    fill="none"
+    stroke="#0b1020"
+    stroke-opacity="0.28"
+    stroke-width="92"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 552 596 H 694"
+    fill="none"
+    stroke="url(#prompt)"
+    stroke-width="72"
+    stroke-linecap="round"
+  />
+</svg>
