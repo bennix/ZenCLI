@@ -2,6 +2,10 @@
 
 [English](#english) | [中文](#chinese)
 
+### 运行展示 / Demo Showcase
+
+https://github.com/bennix/ZenCLI/raw/main/assets/demo.mp4
+
 <a id="chinese"></a>
 ## 🇨🇳 中文说明
 
